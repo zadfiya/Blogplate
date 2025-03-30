@@ -1,6 +1,5 @@
 const posts = []
 const {randomBytes} = require("crypto")
-const os = require('os')
 const createPost = async(req,res)=>{
     const {title} = req.body;
     const postObj = {
