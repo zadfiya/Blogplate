@@ -1,15 +1,20 @@
 import axios from 'axios';
-
-export const postService = axios.create({
-  baseURL: 'http://localhost:3001/api',
+import { ApiService } from './ApiPath';
+const postService = axios.create({
+  baseURL: ApiService.postService,
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-export const commentService = axios.create({
-    baseURL: 'http://localhost:4000/api',
+const commentService = axios.create({
+    baseURL: ApiService.commentService,
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+});
+
+export default {
+  postService,
+  commentService,
+};

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { getRequest, postRequest } from '../../AxiosReq/Request';
 const PostCreate = () =>{
     return (
         <div className='container'>
