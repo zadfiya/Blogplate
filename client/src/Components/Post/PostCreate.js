@@ -1,8 +1,9 @@
 import React from 'react'
 
-const postCreate = () =>{
+const PostCreate = () =>{
     return (
-        <div>
+        <div className='container'>
+            <h2>Create Post</h2>
             <form>
                 <div className='form-group'>
                     <label htmlFor='title'>Title</label>
@@ -13,4 +14,4 @@ const postCreate = () =>{
         </div>
     )
 }
-export default postCreate;
+export default PostCreate;
